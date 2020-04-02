@@ -1,0 +1,56 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #333;
+	color: #999;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+}
+header > ul {
+  display: inline-block;
+}
+header > ul > li {
+  display: inline;
+  padding: 10px 20px;
+  margin: 0 15px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  text-align: center;
+}
+header > ul > li > a {
+  /* display: block; */
+  text-decoration: none;
+  color: #CCC;
+  text-align: center;
+}
+
+.wip-container {
+	font-size: 35px;
+	height: 100%;
+}
+
+/* https://css-tricks.com/centering-in-the-unknown/ */
+.centered__wrapper {
+  text-align: center;
+  white-space: nowrap;
+} 
+.centered__wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
