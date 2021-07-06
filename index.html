@@ -1,79 +1,76 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Language" content="en">
-	<title>H: site</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+<html lang="en">
 
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>kcNDev</title>
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	</head>
+	
+	<body>
+		<header>
+			<ul>
+				<li>
+					<a href="#">WiP</a>
+				</li>
+				<!-- <li>
+					<a href="#">Tutorials</a>	
+				</li> -->
+				<li>
+					<a target="javascript();" onclick="callMe()" >About Me</a>
+				</li>
+			</ul>
+		</header>
 
-	<script type="text/javascript" src="js/infoGathering.js"></script>
-</head>
-<body>
-	<header>
-		<ul>
-			<li>
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/maria-balabanova-43779519b/">Linkedin</a>
-			</li>
-			<!-- <li>CV</li>
-			<li>About Me</li> -->
-		</ul>
-	</header>
-	<div class="wip-container centered__wrapper">
-		<div class="centered">
-
-			<p>Hacking Passionate!</p>
-			<p>#IownYOU</p>
-			<p>Did you knew it?</p>
-
+		<div id="dashboard" class="centered__wrapper">
+			<div class="random-box">
+				aint nobody git time for that.
+				<small>
+					BUT: when ur last option is go out on the street and fuck
+					bitches, it's bettah to find some time
+				</small>
+			</div>
+			<div class="random-box">
+				democracy has been hacked
+			</div>
+			
+			<div class="random-box">
+				free your mind off the screen
+			</div>
+			
+			<div class="random-box">
+				lalalala is a duty pussy
+			</div>
+			
+			<div class="random-box">
+				if you reading this you are a faggot
+			</div>
+			
+			<div class="random-box">
+				my wife life matters
+			</div>
+			
+			<div class="random-box">
+				#op____
+			</div>
+			<div class="centered">
+				<small>HPm</small> 
+				<p>H4hacking Pm4peoplesmind #f0ur2zero</p>
+				<p><strong>#opisnotpoo</strong></p>
+				<small>Updates coming soon._.</small>
+			</div>
 		</div>
-	</div>
 
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
-
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-		https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
-
-	<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyBdRAukmmyZjfssQx9kZH3oc9GAV5X017k",
-			authDomain: "twng-e4704.firebaseapp.com",
-			databaseURL: "https://twng-e4704.firebaseio.com",
-			projectId: "twng-e4704",
-			storageBucket: "twng-e4704.appspot.com",
-			messagingSenderId: "332196619302",
-			appId: "1:332196619302:web:adf63eaf3ecd772155f2e7"
-		};
-
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-
-		var database = firebase.database();
-
-		function writeUserData(userId, name, email, imageUrl) {
-			var id = '' + Math.random();
-			id = id.replace('.', '');
-			var date = new Date();
-			var ipApi = JSON.stringify(window.infoGathered.IpApi);
-			var cloudfare = window.infoGathered.cloudFare;
-			var geoIp = JSON.stringify(window.infoGathered.geoIp);
-			firebase.database().ref('infos/' + id).set({
-				ipapi: ipApi,
-				cloudfare: cloudfare,
-				geoip: geoIp,
-			 	date: date.toUTCString(),
-			});
-		};
-
-		document.addEventListener('DOMContentLoaded', function() {
-			var clearMe = setTimeout(writeUserData, 2000);
-		}, false);
-
-	</script>
-
-</body>
+		<footer>
+			<div>
+				Made with <\3 4 GitHub.com
+			</div>
+			<!-- Meet Me [( !@ Home ) but, butt ] After a Lager beer ( bee ) {MMA Lbee} -->
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
+</html>
